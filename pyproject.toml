@@ -10,6 +10,7 @@ dependencies = [
     "langchain-core",
     "langchain-community",
     "langchain-text-splitters",
-    "langchain-ollama"
+    "langchain-ollama",
+    "grandalf>=0.8",
 ]
 
