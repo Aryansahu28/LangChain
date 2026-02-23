@@ -12,5 +12,6 @@ dependencies = [
     "langchain-text-splitters",
     "langchain-ollama",
     "grandalf>=0.8",
+    "pypdf>=6.7.2",
 ]
 
