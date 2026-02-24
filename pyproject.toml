@@ -13,5 +13,7 @@ dependencies = [
     "langchain-ollama",
     "grandalf>=0.8",
     "pypdf>=6.7.2",
+    "youtube-transcript-api>=1.2.4",
+    "pytube>=15.0.0",
 ]
 
