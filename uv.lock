@@ -1163,6 +1163,7 @@ dependencies = [
     { name = "langchain-ollama" },
     { name = "langchain-text-splitters" },
     { name = "pypdf" },
+    { name = "python-dotenv" },
     { name = "pytube" },
     { name = "youtube-transcript-api" },
 ]
@@ -1177,6 +1178,7 @@ requires-dist = [
     { name = "langchain-ollama" },
     { name = "langchain-text-splitters" },
     { name = "pypdf", specifier = ">=6.7.2" },
+    { name = "python-dotenv", specifier = ">=1.2.1" },
     { name = "pytube", specifier = ">=15.0.0" },
     { name = "youtube-transcript-api", specifier = ">=1.2.4" },
 ]
