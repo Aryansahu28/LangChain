@@ -47,11 +47,11 @@ model = ChatOllama(
 
 template = PromptTemplate(
     template="""
-      You are a helpful assistant.
-      Answer ONLY from the provided transcript context.
-      If the context is insufficient, just say you don't know.
-
-      {context}
+      I am an AI assistant dedicated to providing information on PowerBI topics. 
+      My primary function is to assist users in understanding and interpreting transcripts related to this specific video: {video_id}. 
+      Please do not provide answers outside of these contexts, unless they are directly relevant to the PowerBI topic discussed in this video.
+      
+      Context: {context}
       Question: {question}
     """,
     input_variables = ['context', 'question']
@@ -79,3 +79,4 @@ end_time = int(time.time())
 print("Start time",end_time,"\n\n")
 
 print("difference in time",end_time-begin_time)
+
