@@ -32,9 +32,11 @@ embeddings = OllamaEmbeddings(
 )
 
 vector_store = Chroma.from_documents(
+    documents=docs ,
     collection_name="docs_collections",
-    embedding_function=embeddings,
-    persist_directory="./chroma_langchain_db", )
+    embedding=embeddings,
+    persist_directory="./chroma_langchain_db"
+    )
 
 
 # a = vector_store.add_documents(docs,
