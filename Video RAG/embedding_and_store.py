@@ -54,7 +54,7 @@ def retrievedAnswer(path,queries:list):
 
     result = collection.query(
         query_texts=queries,
-        n_results=4,
+        n_results=8,
         include=["uris","metadatas"]
     )
 

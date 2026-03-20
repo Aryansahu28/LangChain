@@ -25,7 +25,7 @@ class LLM:
         context_info = " | ".join([f"Frame {i}: {d['timestamp']}" for i, d in enumerate(image_data_list)])
         
         content = [
-            {"type": "text", "text": f"Context: {context_info}\nQuestion: {' '.join(self.queries)}"}
+            {"type": "text", "text": f"Context: {context_info}/nQuestion: {' '.join(self.queries)}"}
         ]
         
         for item in image_data_list:
@@ -68,13 +68,13 @@ class LLM:
 
 start_time = time.perf_counter()
 
-llm = LLM(queries=["Which is happening in this video?"],video_path="C:/Users/HP-PC/Downloads/8064146-uhd_1440_1800_30fps.mp4")
+llm = LLM(queries=["Which living thing is in the video and name of it species?"],video_path="C:/Users/HP-PC/Downloads/videos/insects/butterflies_1280.mp4")
 
-print(llm.final_result())
 
         
-end_time = time.perf_counter()
+print(llm.final_result())
 
+end_time = time.perf_counter()
 elapsed_time = end_time - start_time
 print(f"Elapsed time: {elapsed_time:.4f} seconds")
 
